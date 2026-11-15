@@ -1,0 +1,2587 @@
+---
+app:
+  description: Flow A
+  icon: "\U0001F916"
+  icon_background: "#FFEAD5"
+  icon_type: emoji
+  mode: workflow
+  name: Flow A
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: 
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: bowenliang123/md_exporter:4.0.0@eff5440a18b9fa10d7fe3f0a1b5a2ef1bf78ab8a19dd92e273daf7a346553106
+    version: 
+kind: app
+version: 0.6.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - ".JPG"
+      - ".JPEG"
+      - ".PNG"
+      - ".GIF"
+      - ".WEBP"
+      - ".SVG"
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        attachment_image_file_size_limit: 2
+        audio_file_size_limit: 50
+        batch_count_limit: 10
+        file_size_limit: 30
+        file_upload_limit: 20
+        image_file_batch_limit: 10
+        image_file_size_limit: 10
+        single_chunk_attachment_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 15
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: false
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - id: 1794722165949-source-1794722256434-target
+      source: '1794722165949'
+      sourceHandle: source
+      target: '1794722256434'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: document-extractor
+    - id: 1794722256434-source-1794722510259-target
+      source: '1794722256434'
+      sourceHandle: source
+      target: '1794722510259'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: document-extractor
+        targetType: code
+    - id: 1794722165949-source-1794724127142-target
+      source: '1794722165949'
+      sourceHandle: source
+      target: '1794724127142'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: document-extractor
+    - id: 1794724127142-source-1794722510259-target
+      source: '1794724127142'
+      sourceHandle: source
+      target: '1794722510259'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: document-extractor
+        targetType: code
+    - id: 1794722165949-source-1794724135876-target
+      source: '1794722165949'
+      sourceHandle: source
+      target: '1794724135876'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: document-extractor
+    - id: 1794724135876-source-1794722510259-target
+      source: '1794724135876'
+      sourceHandle: source
+      target: '1794722510259'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: document-extractor
+        targetType: code
+    - id: 1794722165949-source-1794724138923-target
+      source: '1794722165949'
+      sourceHandle: source
+      target: '1794724138923'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: document-extractor
+    - id: 1794724138923-source-1794722510259-target
+      source: '1794724138923'
+      sourceHandle: source
+      target: '1794722510259'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: document-extractor
+        targetType: code
+    - id: 1794722165949-source-1794724144317-target
+      source: '1794722165949'
+      sourceHandle: source
+      target: '1794724144317'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: document-extractor
+    - id: 1794724144317-source-1794722510259-target
+      source: '1794724144317'
+      sourceHandle: source
+      target: '1794722510259'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: document-extractor
+        targetType: code
+    - id: 1794722510259-source-1794750000001-target
+      source: '1794722510259'
+      sourceHandle: source
+      target: '1794750000001'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: if-else
+    - id: 1794750000001-true-1794725948489-target
+      source: '1794750000001'
+      sourceHandle: 'true'
+      target: '1794725948489'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: code
+    - id: 1794750000001-false-1794750000002-target
+      source: '1794750000001'
+      sourceHandle: 'false'
+      target: '1794750000002'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: end
+    - id: 1794725948489-source-1794725952559-target
+      source: '1794725948489'
+      sourceHandle: source
+      target: '1794725952559'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+    - id: 1794725952559-source-1794725957535-target
+      source: '1794725952559'
+      sourceHandle: source
+      target: '1794725957535'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+    - id: 1794725957535-source-1794750000003-target
+      source: '1794725957535'
+      sourceHandle: source
+      target: '1794750000003'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+    - id: 1794750000003-source-1794725969863-target
+      source: '1794750000003'
+      sourceHandle: source
+      target: '1794725969863'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: tool
+    - id: 1794725969863-source-1794750000004-target
+      source: '1794725969863'
+      sourceHandle: source
+      target: '1794750000004'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: code
+    - id: 1794750000003-source-1794725977431-target
+      source: '1794750000003'
+      sourceHandle: source
+      target: '1794725977431'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: tool
+    - id: 1794725977431-source-1794750000004-target
+      source: '1794725977431'
+      sourceHandle: source
+      target: '1794750000004'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: code
+    - id: 1794750000003-source-1794725982707-target
+      source: '1794750000003'
+      sourceHandle: source
+      target: '1794725982707'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: tool
+    - id: 1794725982707-source-1794750000004-target
+      source: '1794725982707'
+      sourceHandle: source
+      target: '1794750000004'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: code
+    - id: 1794750000003-source-1794725986671-target
+      source: '1794750000003'
+      sourceHandle: source
+      target: '1794725986671'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: tool
+    - id: 1794725986671-source-1794750000004-target
+      source: '1794725986671'
+      sourceHandle: source
+      target: '1794750000004'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: code
+    - id: 1794750000003-source-1794726005592-target
+      source: '1794750000003'
+      sourceHandle: source
+      target: '1794726005592'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: tool
+    - id: 1794726005592-source-1794750000004-target
+      source: '1794726005592'
+      sourceHandle: source
+      target: '1794750000004'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: tool
+        targetType: code
+    - id: 1794750000004-source-1794740982816-target
+      source: '1794750000004'
+      sourceHandle: source
+      target: '1794740982816'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+      selected: false
+      data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: end
+    nodes:
+    - data:
+        selected: false
+        title: 用户输入
+        type: start
+        variables:
+        - allowed_file_extensions:
+          - ".csv"
+          - ".txt"
+          - ".md"
+          - ".markdown"
+          allowed_file_types:
+          - document
+          allowed_file_upload_methods:
+          - local_file
+          - remote_url
+          default: ''
+          hide: false
+          hint: ''
+          label: 投诉记录表 (complaint_record)
+          options: []
+          placeholder: ''
+          required: true
+          type: file
+          variable: complaint_record
+        - allowed_file_extensions:
+          - ".csv"
+          - ".txt"
+          - ".md"
+          - ".markdown"
+          allowed_file_types:
+          - document
+          allowed_file_upload_methods:
+          - local_file
+          - remote_url
+          default: ''
+          hide: false
+          hint: ''
+          label: 投诉处理表 (complaint_handling)
+          options: []
+          placeholder: ''
+          required: true
+          type: file
+          variable: complaint_handling
+        - allowed_file_extensions:
+          - ".csv"
+          - ".txt"
+          - ".md"
+          - ".markdown"
+          allowed_file_types:
+          - document
+          allowed_file_upload_methods:
+          - local_file
+          - remote_url
+          default: ''
+          hide: false
+          hint: ''
+          label: 客户主档 (customer_info)
+          options: []
+          placeholder: ''
+          required: true
+          type: file
+          variable: customer_info
+        - allowed_file_extensions:
+          - ".csv"
+          - ".txt"
+          - ".md"
+          - ".markdown"
+          allowed_file_types:
+          - document
+          allowed_file_upload_methods:
+          - local_file
+          - remote_url
+          default: ''
+          hide: false
+          hint: ''
+          label: 员工主档 (employee_info)
+          options: []
+          placeholder: ''
+          required: true
+          type: file
+          variable: employee_info
+        - allowed_file_extensions:
+          - ".csv"
+          - ".txt"
+          - ".md"
+          - ".markdown"
+          allowed_file_types:
+          - document
+          allowed_file_upload_methods:
+          - local_file
+          - remote_url
+          default: ''
+          hide: false
+          hint: ''
+          label: 营业厅主档 (hall_info)
+          options: []
+          placeholder: ''
+          required: true
+          type: file
+          variable: hall_info
+      height: 213
+      id: '1794722165949'
+      position:
+        x: 0
+        y: 300
+      positionAbsolute:
+        x: 0
+        y: 300
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_array_file: false
+        selected: false
+        title: COMPLAINT_RECORD
+        type: document-extractor
+        variable_selector:
+        - '1794722165949'
+        - complaint_record
+      height: 104
+      id: '1794722256434'
+      position:
+        x: 320
+        y: 80
+      positionAbsolute:
+        x: 320
+        y: 80
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_array_file: false
+        selected: false
+        title: COMPLAINT_HANDLING
+        type: document-extractor
+        variable_selector:
+        - '1794722165949'
+        - complaint_handling
+      height: 104
+      id: '1794724127142'
+      position:
+        x: 320
+        y: 210
+      positionAbsolute:
+        x: 320
+        y: 210
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_array_file: false
+        selected: false
+        title: CUSTOMER_INFO
+        type: document-extractor
+        variable_selector:
+        - '1794722165949'
+        - customer_info
+      height: 104
+      id: '1794724135876'
+      position:
+        x: 320
+        y: 340
+      positionAbsolute:
+        x: 320
+        y: 340
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_array_file: false
+        selected: false
+        title: EMPLOYEE_INFO
+        type: document-extractor
+        variable_selector:
+        - '1794722165949'
+        - employee_info
+      height: 104
+      id: '1794724138923'
+      position:
+        x: 320
+        y: 470
+      positionAbsolute:
+        x: 320
+        y: 470
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_array_file: false
+        selected: false
+        title: HALL_INFO
+        type: document-extractor
+        variable_selector:
+        - '1794722165949'
+        - hall_info
+      height: 104
+      id: '1794724144317'
+      position:
+        x: 320
+        y: 600
+      positionAbsolute:
+        x: 320
+        y: 600
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - id: '1794722510259'
+      data:
+        title: 03 表结构统一
+        type: code
+        code_language: python3
+        code: |
+          import csv
+          import io
+          import json
+          import re
+          from collections import Counter, defaultdict
+
+          TABLES = ['record', 'handling', 'customer', 'employee', 'hall']
+          FIELDS = {
+              'record': ['complaint_id', 'accept_time', 'customer_id', 'handler_name', 'package_type', 'complaint_description', 'complaint_type', 'complaint_subtype'],
+              'handling': ['complaint_id', 'handler_id', 'hall_id', 'accept_time', 'customer_feedback', 'customer_name'],
+              'customer': ['customer_id', 'customer_name', 'customer_level'],
+              'employee': ['handler_id', 'handler_name', 'hall_id'],
+              'hall': ['hall_id', 'hall_name', 'region'],
+          }
+
+          def dump_json(value):
+              return json.dumps(value, ensure_ascii=False, separators=(',', ':'))
+
+          def empty(value):
+              return value is None or str(value).strip() == ''
+
+          def write_csv(header, rows):
+              stream = io.StringIO(newline='')
+              writer = csv.writer(stream, lineterminator='\n')
+              writer.writerow(header)
+              writer.writerows([[row.get(key, '') for key in header] for row in rows])
+              return stream.getvalue()
+
+          def read_csv(text):
+              if not isinstance(text, str) or not text.strip():
+                  raise ValueError('上游表格为空或不是字符串')
+              records = list(csv.reader(io.StringIO(text, newline=''), strict=True))
+              if not records or not records[0] or len(set(records[0])) != len(records[0]):
+                  raise ValueError('CSV 表头为空或重复')
+              header = records[0]
+              rows = []
+              for line, cells in enumerate(records[1:], 2):
+                  if len(cells) != len(header):
+                      raise ValueError('CSV 第 {} 行列数与表头不一致'.format(line))
+                  rows.append(dict(zip(header, cells)))
+              return header, rows
+
+          def index_rows(rows):
+              result = {}
+              for row in rows:
+                  value = row.get('source_row_index', '')
+                  if not re.fullmatch(r'0|[1-9]\d*', str(value)):
+                      raise ValueError('source_row_index 缺失或不是非负整数')
+                  index = int(value)
+                  if index in result:
+                      raise ValueError('source_row_index 重复：{}'.format(index))
+                  result[index] = row
+              return result
+
+          def valid_id(value, column):
+              patterns = {'complaint_id': r'TS\d{10}', 'customer_id': r'CUST\d{4}',
+                          'handler_id': r'EMP\d{4}', 'hall_id': r'HALL\d{3}'}
+              return isinstance(value, str) and re.fullmatch(patterns[column], value) is not None
+
+          def relation(rows, source, target):
+              mapping = defaultdict(set)
+              for row in rows:
+                  a, b = row.get(source, ''), row.get(target, '')
+                  if empty(a) or empty(b) or '记录丢失' in str(a) or '记录丢失' in str(b):
+                      continue
+                  if source.endswith('_id') and not valid_id(a, source):
+                      continue
+                  if target.endswith('_id') and not valid_id(b, target):
+                      continue
+                  mapping[a].add(b)
+              return mapping
+
+
+          ALIASES = {
+              '投诉id': 'complaint_id', '投诉编号': 'complaint_id', '投诉单号': 'complaint_id',
+              '受理时间': 'accept_time', '受理日期': 'accept_time',
+              '客户编号': 'customer_id', '客户id': 'customer_id', '客户姓名': 'customer_name',
+              '客户名称': 'customer_name', '客户等级': 'customer_level',
+              '员工id': 'handler_id', '员工编号': 'handler_id', '处理人id': 'handler_id',
+              '员工姓名': 'handler_name', '处理人姓名': 'handler_name',
+              '营业厅id': 'hall_id', '营业厅编号': 'hall_id', '营业厅名称': 'hall_name',
+              '套餐类型': 'package_type', '套餐': 'package_type', '投诉描述': 'complaint_description',
+              '投诉内容': 'complaint_description', '投诉类型': 'complaint_type',
+              '投诉子类': 'complaint_subtype', '客户反馈': 'customer_feedback', '区域': 'region', '地区': 'region',
+          }
+
+          def column_name(value, index):
+              value = value.strip().lstrip('\ufeff')
+              if not value:
+                  raise ValueError('第 {} 列表头为空'.format(index + 1))
+              if value.lower() in ALIASES:
+                  return ALIASES[value.lower()]
+              value = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', value).lower()
+              value = re.sub(r'[\s\-]+', '_', value).strip('_')
+              return value if re.fullmatch(r'[a-z_][a-z0-9_]*', value) else 'extra_column_{}'.format(index + 1)
+
+          def split_md(line):
+              line = line.strip()
+              if line.startswith('|'):
+                  line = line[1:]
+              if line.endswith('|') and not line.endswith('\\|'):
+                  line = line[:-1]
+              cells, buf, i = [], [], 0
+              while i < len(line):
+                  if line[i] == '\\' and i + 1 < len(line) and line[i + 1] in '|\\':
+                      buf.append(line[i + 1]); i += 2
+                  elif line[i] == '|':
+                      cells.append(''.join(buf).strip()); buf = []; i += 1
+                  else:
+                      buf.append(line[i]); i += 1
+              cells.append(''.join(buf).strip())
+              return cells
+
+          def parse_input(text):
+              if not isinstance(text, str) or not text.strip():
+                  raise ValueError('文档提取结果为空或不是字符串')
+              text = text.lstrip('\ufeff')
+              lines = text.strip().splitlines()
+              if lines[0].strip().startswith('```') and lines[-1].strip() == '```':
+                  lines = lines[1:-1]
+                  text = '\n'.join(lines)
+              if not lines:
+                  raise ValueError('没有表头')
+              separator = len(lines) > 1 and all(re.fullmatch(r':?-{3,}:?', x) for x in split_md(lines[1]))
+              if separator:
+                  records = [split_md(lines[0])]
+                  if len(split_md(lines[1])) != len(records[0]):
+                      raise ValueError('Markdown 分隔行列数不匹配')
+                  for number, line in enumerate(lines[2:], 3):
+                      if not line.strip():
+                          continue
+                      cells = split_md(line)
+                      if len(cells) != len(records[0]):
+                          raise ValueError('Markdown 第 {} 行为 {} 列，表头为 {} 列'.format(number, len(cells), len(records[0])))
+                      records.append(cells)
+                  return records, 'Markdown'
+              if lines[0].strip().startswith('|'):
+                  raise ValueError('Markdown 表格缺少合法的表头分隔行')
+              records = list(csv.reader(io.StringIO(text, newline=''), strict=True))
+              if not records:
+                  raise ValueError('没有表头')
+              return records, 'CSV'
+
+          def normalize(text, table):
+              records, fmt = parse_input(text)
+              raw_header = records[0]
+              header = [column_name(x, i) for i, x in enumerate(raw_header)]
+              if len(set(header)) != len(header):
+                  raise ValueError('列名统一后出现重复列：{}'.format(header))
+              missing = [x for x in FIELDS[table] if x not in header]
+              if missing:
+                  raise ValueError('缺少必需列：{}'.format(', '.join(missing)))
+              order = FIELDS[table] + [x for x in header if x not in FIELDS[table] and x != 'source_row_index'] + ['source_row_index']
+              rows = []
+              for i, values in enumerate(records[1:]):
+                  if len(values) != len(header):
+                      raise ValueError('第 {} 条记录列数不匹配'.format(i + 1))
+                  row = dict(zip(header, values))
+                  if 'source_row_index' in row and row['source_row_index'] != str(i):
+                      raise ValueError('输入已有 source_row_index，但与从 0 开始的原始行序不一致')
+                  row['source_row_index'] = str(i)
+                  rows.append(row)
+              return write_csv(order, rows), '{}：{}，{} 条记录'.format(table, fmt, len(rows))
+
+          def main(record_text, handling_text, customer_text, employee_text, hall_text):
+              result = {name + '_csv': '' for name in TABLES}
+              messages, errors = [], []
+              for name, text in zip(TABLES, [record_text, handling_text, customer_text, employee_text, hall_text]):
+                  try:
+                      result[name + '_csv'], message = normalize(text, name)
+                      messages.append(message)
+                  except (ValueError, TypeError, csv.Error) as exc:
+                      errors.append('{}：{}'.format(name, exc))
+              result['parse_ok'] = not errors
+              result['parse_message'] = ('解析失败；' + '；'.join(errors)) if errors else ('解析成功；' + '；'.join(messages))
+              return result
+        variables:
+        - variable: record_text
+          value_selector:
+          - '1794722256434'
+          - text
+          value_type: string
+        - variable: handling_text
+          value_selector:
+          - '1794724127142'
+          - text
+          value_type: string
+        - variable: customer_text
+          value_selector:
+          - '1794724135876'
+          - text
+          value_type: string
+        - variable: employee_text
+          value_selector:
+          - '1794724138923'
+          - text
+          value_type: string
+        - variable: hall_text
+          value_selector:
+          - '1794724144317'
+          - text
+          value_type: string
+        outputs:
+          record_csv:
+            type: string
+            children: 
+          handling_csv:
+            type: string
+            children: 
+          customer_csv:
+            type: string
+            children: 
+          employee_csv:
+            type: string
+            children: 
+          hall_csv:
+            type: string
+            children: 
+          parse_message:
+            type: string
+            children: 
+          parse_ok:
+            type: boolean
+            children: 
+        desc: 解析 Markdown/CSV，统一列名；不改时间、ID 或单元格值。生成从 0 开始的 source_row_index。输出为真正的
+          CSV 文本。
+        selected: false
+      type: custom
+      width: 250
+      height: 80
+      sourcePosition: right
+      targetPosition: left
+      position:
+        x: 660
+        y: 300
+      positionAbsolute:
+        x: 660
+        y: 300
+      selected: false
+    - id: '1794750000001'
+      data:
+        type: if-else
+        title: 解析是否成功
+        desc: 失败时只返回解析原因，不进入清洗或文件导出。
+        cases:
+        - case_id: 'true'
+          id: 'true'
+          logical_operator: and
+          conditions:
+          - id: parse-ok-condition
+            variable_selector:
+            - '1794722510259'
+            - parse_ok
+            varType: boolean
+            comparison_operator: is
+            value: true
+        selected: false
+      type: custom
+      width: 250
+      height: 80
+      sourcePosition: right
+      targetPosition: left
+      position:
+        x: 990
+        y: 300
+      positionAbsolute:
+        x: 990
+        y: 300
+      selected: false
+    - id: '1794750000002'
+      data:
+        type: end
+        title: 解析异常输出
+        outputs:
+        - variable: parse_ok
+          value_selector:
+          - '1794722510259'
+          - parse_ok
+          value_type: boolean
+        - variable: parse_message
+          value_selector:
+          - '1794722510259'
+          - parse_message
+          value_type: string
+        selected: false
+      type: custom
+      width: 250
+      height: 80
+      sourcePosition: right
+      targetPosition: left
+      position:
+        x: 1320
+        y: 650
+      positionAbsolute:
+        x: 1320
+        y: 650
+      selected: false
+    - id: '1794725948489'
+      data:
+        title: 04 时间格式统一
+        type: code
+        code_language: python3
+        code: |
+          import csv
+          import io
+          import json
+          import re
+          from collections import Counter, defaultdict
+
+          TABLES = ['record', 'handling', 'customer', 'employee', 'hall']
+          FIELDS = {
+              'record': ['complaint_id', 'accept_time', 'customer_id', 'handler_name', 'package_type', 'complaint_description', 'complaint_type', 'complaint_subtype'],
+              'handling': ['complaint_id', 'handler_id', 'hall_id', 'accept_time', 'customer_feedback', 'customer_name'],
+              'customer': ['customer_id', 'customer_name', 'customer_level'],
+              'employee': ['handler_id', 'handler_name', 'hall_id'],
+              'hall': ['hall_id', 'hall_name', 'region'],
+          }
+
+          def dump_json(value):
+              return json.dumps(value, ensure_ascii=False, separators=(',', ':'))
+
+          def empty(value):
+              return value is None or str(value).strip() == ''
+
+          def write_csv(header, rows):
+              stream = io.StringIO(newline='')
+              writer = csv.writer(stream, lineterminator='\n')
+              writer.writerow(header)
+              writer.writerows([[row.get(key, '') for key in header] for row in rows])
+              return stream.getvalue()
+
+          def read_csv(text):
+              if not isinstance(text, str) or not text.strip():
+                  raise ValueError('上游表格为空或不是字符串')
+              records = list(csv.reader(io.StringIO(text, newline=''), strict=True))
+              if not records or not records[0] or len(set(records[0])) != len(records[0]):
+                  raise ValueError('CSV 表头为空或重复')
+              header = records[0]
+              rows = []
+              for line, cells in enumerate(records[1:], 2):
+                  if len(cells) != len(header):
+                      raise ValueError('CSV 第 {} 行列数与表头不一致'.format(line))
+                  rows.append(dict(zip(header, cells)))
+              return header, rows
+
+          def index_rows(rows):
+              result = {}
+              for row in rows:
+                  value = row.get('source_row_index', '')
+                  if not re.fullmatch(r'0|[1-9]\d*', str(value)):
+                      raise ValueError('source_row_index 缺失或不是非负整数')
+                  index = int(value)
+                  if index in result:
+                      raise ValueError('source_row_index 重复：{}'.format(index))
+                  result[index] = row
+              return result
+
+          def valid_id(value, column):
+              patterns = {'complaint_id': r'TS\d{10}', 'customer_id': r'CUST\d{4}',
+                          'handler_id': r'EMP\d{4}', 'hall_id': r'HALL\d{3}'}
+              return isinstance(value, str) and re.fullmatch(patterns[column], value) is not None
+
+          def relation(rows, source, target):
+              mapping = defaultdict(set)
+              for row in rows:
+                  a, b = row.get(source, ''), row.get(target, '')
+                  if empty(a) or empty(b) or '记录丢失' in str(a) or '记录丢失' in str(b):
+                      continue
+                  if source.endswith('_id') and not valid_id(a, source):
+                      continue
+                  if target.endswith('_id') and not valid_id(b, target):
+                      continue
+                  mapping[a].add(b)
+              return mapping
+
+
+          from datetime import datetime
+
+          BASE_TIME = re.compile(r'^\d{4}/\d{1,2}/\d{1,2}\s+\d{1,2}:\d{2}(?::\d{2})?$')
+          TIME_FORMATS = [
+              '%Y/%m/%d %H:%M:%S', '%Y/%m/%d %H:%M', '%Y/%m/%d',
+              '%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M', '%Y-%m-%d',
+              '%Y.%m.%d %H:%M:%S', '%Y.%m.%d %H:%M', '%Y.%m.%d',
+              '%Y年%m月%d日 %H:%M:%S', '%Y年%m月%d日 %H:%M', '%Y年%m月%d日',
+              '%d-%m-%Y %H:%M:%S', '%d-%m-%Y %H:%M',
+              '%H:%M:%S %d-%m-%Y', '%H:%M %d-%m-%Y',
+              '%m/%d/%Y %I:%M:%S %p', '%m/%d/%Y %I:%M %p',
+              '%A, %d %B %Y %I:%M:%S %p', '%A, %d %B %Y %I:%M %p',
+          ]
+
+          def parse_time(raw):
+              if empty(raw):
+                  return raw, False, 'blank'
+              value = str(raw).strip()
+              if len(value) > 1 and value[0] in '\"\'' and value[-1] == value[0]:
+                  value = value[1:-1].strip()
+              formats = TIME_FORMATS
+              if re.fullmatch(r'\d{14}', value):
+                  formats = ['%Y%m%d%H%M%S']
+              elif re.fullmatch(r'\d{12}', value):
+                  formats = ['%Y%m%d%H%M']
+              for fmt in formats:
+                  try:
+                      parsed = datetime.strptime(value, fmt)
+                      return parsed.strftime('%Y/%m/%d %H:%M'), not bool(BASE_TIME.fullmatch(value)), None
+                  except ValueError:
+                      continue
+              return raw, False, 'unrecognized_or_invalid'
+
+          def main(record_csv, handling_csv):
+              result, issues = {}, []
+              for name, text in [('record', record_csv), ('handling', handling_csv)]:
+                  header, rows = read_csv(text)
+                  index_rows(rows)
+                  count = 0
+                  for row in rows:
+                      raw = row['accept_time']
+                      normalized, repaired, reason = parse_time(raw)
+                      row['accept_time'] = normalized
+                      count += int(repaired)
+                      if reason:
+                          issues.append({'table': name, 'source_row_index': int(row['source_row_index']), 'raw': raw, 'reason': reason})
+                  result[name + '_time_csv'] = write_csv(header, rows)
+                  result[name + '_fix_count'] = count
+              result['time_issues_json'] = dump_json(issues)
+              return result
+        variables:
+        - variable: record_csv
+          value_selector:
+          - '1794722510259'
+          - record_csv
+          value_type: string
+        - variable: handling_csv
+          value_selector:
+          - '1794722510259'
+          - handling_csv
+          value_type: string
+        outputs:
+          record_time_csv:
+            type: string
+            children: 
+          handling_time_csv:
+            type: string
+            children: 
+          time_issues_json:
+            type: string
+            children: 
+          record_fix_count:
+            type: number
+            children: 
+          handling_fix_count:
+            type: number
+            children: 
+        desc: 只改 accept_time；保留无法识别的非空原值。斜杠日期时间补零不计入修复数，仅日期补零时刻计入。
+        selected: false
+      type: custom
+      width: 250
+      height: 80
+      sourcePosition: right
+      targetPosition: left
+      position:
+        x: 1320
+        y: 300
+      positionAbsolute:
+        x: 1320
+        y: 300
+      selected: false
+    - id: '1794725952559'
+      data:
+        title: 05 ID 格式还原
+        type: code
+        code_language: python3
+        code: |
+          import csv
+          import io
+          import json
+          import re
+          from collections import Counter, defaultdict
+
+          TABLES = ['record', 'handling', 'customer', 'employee', 'hall']
+          FIELDS = {
+              'record': ['complaint_id', 'accept_time', 'customer_id', 'handler_name', 'package_type', 'complaint_description', 'complaint_type', 'complaint_subtype'],
+              'handling': ['complaint_id', 'handler_id', 'hall_id', 'accept_time', 'customer_feedback', 'customer_name'],
+              'customer': ['customer_id', 'customer_name', 'customer_level'],
+              'employee': ['handler_id', 'handler_name', 'hall_id'],
+              'hall': ['hall_id', 'hall_name', 'region'],
+          }
+
+          def dump_json(value):
+              return json.dumps(value, ensure_ascii=False, separators=(',', ':'))
+
+          def empty(value):
+              return value is None or str(value).strip() == ''
+
+          def write_csv(header, rows):
+              stream = io.StringIO(newline='')
+              writer = csv.writer(stream, lineterminator='\n')
+              writer.writerow(header)
+              writer.writerows([[row.get(key, '') for key in header] for row in rows])
+              return stream.getvalue()
+
+          def read_csv(text):
+              if not isinstance(text, str) or not text.strip():
+                  raise ValueError('上游表格为空或不是字符串')
+              records = list(csv.reader(io.StringIO(text, newline=''), strict=True))
+              if not records or not records[0] or len(set(records[0])) != len(records[0]):
+                  raise ValueError('CSV 表头为空或重复')
+              header = records[0]
+              rows = []
+              for line, cells in enumerate(records[1:], 2):
+                  if len(cells) != len(header):
+                      raise ValueError('CSV 第 {} 行列数与表头不一致'.format(line))
+                  rows.append(dict(zip(header, cells)))
+              return header, rows
+
+          def index_rows(rows):
+              result = {}
+              for row in rows:
+                  value = row.get('source_row_index', '')
+                  if not re.fullmatch(r'0|[1-9]\d*', str(value)):
+                      raise ValueError('source_row_index 缺失或不是非负整数')
+                  index = int(value)
+                  if index in result:
+                      raise ValueError('source_row_index 重复：{}'.format(index))
+                  result[index] = row
+              return result
+
+          def valid_id(value, column):
+              patterns = {'complaint_id': r'TS\d{10}', 'customer_id': r'CUST\d{4}',
+                          'handler_id': r'EMP\d{4}', 'hall_id': r'HALL\d{3}'}
+              return isinstance(value, str) and re.fullmatch(patterns[column], value) is not None
+
+          def relation(rows, source, target):
+              mapping = defaultdict(set)
+              for row in rows:
+                  a, b = row.get(source, ''), row.get(target, '')
+                  if empty(a) or empty(b) or '记录丢失' in str(a) or '记录丢失' in str(b):
+                      continue
+                  if source.endswith('_id') and not valid_id(a, source):
+                      continue
+                  if target.endswith('_id') and not valid_id(b, target):
+                      continue
+                  mapping[a].add(b)
+              return mapping
+
+
+          ID_RULES = {
+              'complaint_id': ('TS', 10, '投诉单'), 'customer_id': ('CUST', 4, '客户'),
+              'handler_id': ('EMP', 4, '员工'), 'hall_id': ('HALL', 3, '营业厅'),
+          }
+
+          def normalize_id(raw, column, months):
+              if empty(raw):
+                  return raw, 'blank'
+              value = str(raw).strip()
+              if len(value) > 1 and value[0] in '\"\'' and value[-1] == value[0]:
+                  value = value[1:-1].strip()
+              prefix, digits, chinese = ID_RULES[column]
+              chinese_match = re.fullmatch(re.escape(chinese) + r'\s*(\d+)', value)
+              if chinese_match:
+                  number = int(chinese_match[1]) - 1
+                  if number < 0:
+                      return raw, 'invalid_one_based_ordinal'
+                  tail = str(number)
+              else:
+                  match = re.fullmatch(re.escape(prefix) + r'(\d+)', value.upper())
+                  if match:
+                      tail = match[1]
+                  elif re.fullmatch(r'\d+', value):
+                      tail = value
+                  else:
+                      return raw, 'unrecognized'
+              if column == 'complaint_id':
+                  if 7 <= len(tail) <= 10 and not chinese_match:
+                      match = re.fullmatch(r'(\d{4}(?:0[1-9]|1[0-2]))(\d{1,4})', tail)
+                      if not match:
+                          return raw, 'invalid_year_month'
+                      return prefix + match[1] + match[2].zfill(4), None
+                  if len(tail) <= 4 and len(months) == 1:
+                      return prefix + next(iter(months)) + tail.zfill(4), None
+                  return raw, 'ambiguous_month_or_width'
+              if len(tail) <= digits:
+                  return prefix + tail.zfill(digits), None
+              return raw, 'invalid_width'
+
+          def main(record_time_csv, handling_time_csv, customer_csv, employee_csv, hall_csv):
+              source = dict(zip(TABLES, [record_time_csv, handling_time_csv, customer_csv, employee_csv, hall_csv]))
+              tables = {name: read_csv(text) for name, text in source.items()}
+              for header, rows in tables.values():
+                  index_rows(rows)
+              months = set()
+              for name in ['record', 'handling']:
+                  for row in tables[name][1]:
+                      match = re.fullmatch(r'(?:TS)?(\d{4}(?:0[1-9]|1[0-2]))\d{4}', row['complaint_id'].strip(), re.I)
+                      if match:
+                          months.add(match[1])
+              reports, unresolved, conflicts = {}, [], []
+              for name in ['customer', 'employee', 'hall', 'record', 'handling']:
+                  header, rows = tables[name]
+                  fixed, blanks, affected = Counter(), Counter(), set()
+                  for row in rows:
+                      for column in [x for x in header if x in ID_RULES]:
+                          raw = row[column]
+                          candidate, reason = normalize_id(raw, column, months)
+                          sri = int(row['source_row_index'])
+                          if reason == 'blank':
+                              blanks[column] += 1
+                          elif reason:
+                              unresolved.append({'table': name, 'source_row_index': sri, 'column': column, 'raw': raw, 'reason': reason})
+                          elif candidate != raw:
+                              row[column] = candidate
+                              fixed[column] += 1
+                              affected.add(sri)
+                  reports[name] = {'fixed_cells': sum(fixed.values()), 'fixed_by_field': dict(fixed),
+                                   'affected_rows': len(affected), 'blank_ids': sum(blanks.values()), 'blank_by_field': dict(blanks)}
+              # Canonical IDs are checked against master keys and cross-table relationships.
+              # Conflicting non-empty values are reported, never silently replaced by a name match.
+              checks = [('record', 'customer_id', 'customer'), ('handling', 'handler_id', 'employee'),
+                        ('handling', 'hall_id', 'hall'), ('employee', 'hall_id', 'hall')]
+              for name, column, master in checks:
+                  allowed = {r[column] for r in tables[master][1] if valid_id(r[column], column)}
+                  for row in tables[name][1]:
+                      if valid_id(row[column], column) and row[column] not in allowed:
+                          conflicts.append({'table': name, 'source_row_index': int(row['source_row_index']), 'column': column, 'value': row[column], 'reason': 'not_in_master'})
+              record_map, handling_map = index_rows(tables['record'][1]), index_rows(tables['handling'][1])
+              customers = relation(tables['customer'][1], 'customer_id', 'customer_name')
+              employees = relation(tables['employee'][1], 'handler_id', 'handler_name')
+              for sri in record_map.keys() & handling_map.keys():
+                  record, handling = record_map[sri], handling_map[sri]
+                  a, b = record['complaint_id'], handling['complaint_id']
+                  if valid_id(a, 'complaint_id') and valid_id(b, 'complaint_id') and a != b:
+                      conflicts.append({'table': 'record/handling', 'source_row_index': sri, 'column': 'complaint_id', 'reason': 'cross_table_conflict', 'values': [a, b]})
+                  for mapping, key, value, column in [(customers, record['customer_id'], handling['customer_name'], 'customer_id/customer_name'),
+                                                       (employees, handling['handler_id'], record['handler_name'], 'handler_id/handler_name')]:
+                      if key in mapping and not empty(value) and (len(mapping[key]) != 1 or value not in mapping[key]):
+                          conflicts.append({'table': 'record/handling', 'source_row_index': sri, 'column': column, 'reason': 'master_relation_conflict'})
+              output = {name + '_id_csv': write_csv(*tables[name]) for name in TABLES}
+              output['record_fix_count'] = reports['record']['fixed_cells']
+              output['handling_fix_count'] = reports['handling']['fixed_cells']
+              output['id_report_json'] = dump_json({'tables': reports, 'complaint_month_candidates': sorted(months),
+                                                   'unresolved': unresolved, 'conflicts': conflicts,
+                                                   'total_fixed_cells': sum(r['fixed_cells'] for r in reports.values())})
+              return output
+        variables:
+        - variable: record_time_csv
+          value_selector:
+          - '1794725948489'
+          - record_time_csv
+          value_type: string
+        - variable: handling_time_csv
+          value_selector:
+          - '1794725948489'
+          - handling_time_csv
+          value_type: string
+        - variable: customer_csv
+          value_selector:
+          - '1794722510259'
+          - customer_csv
+          value_type: string
+        - variable: employee_csv
+          value_selector:
+          - '1794722510259'
+          - employee_csv
+          value_type: string
+        - variable: hall_csv
+          value_selector:
+          - '1794722510259'
+          - hall_csv
+          value_type: string
+        outputs:
+          record_id_csv:
+            type: string
+            children: 
+          handling_id_csv:
+            type: string
+            children: 
+          customer_id_csv:
+            type: string
+            children: 
+          employee_id_csv:
+            type: string
+            children: 
+          hall_id_csv:
+            type: string
+            children: 
+          id_report_json:
+            type: string
+            children: 
+          record_fix_count:
+            type: number
+            children: 
+          handling_fix_count:
+            type: number
+            children: 
+        desc: 五张表逐单元格还原非空 ID；中文序号减 1；核对主表和跨表关系。空白、歧义保留并报告。
+        selected: false
+      type: custom
+      width: 250
+      height: 80
+      sourcePosition: right
+      targetPosition: left
+      position:
+        x: 1650
+        y: 300
+      positionAbsolute:
+        x: 1650
+        y: 300
+      selected: false
+    - id: '1794725957535'
+      data:
+        title: 06 缺失还原与删除
+        type: code
+        code_language: python3
+        code: |
+          import csv
+          import io
+          import json
+          import re
+          from collections import Counter, defaultdict
+
+          TABLES = ['record', 'handling', 'customer', 'employee', 'hall']
+          FIELDS = {
+              'record': ['complaint_id', 'accept_time', 'customer_id', 'handler_name', 'package_type', 'complaint_description', 'complaint_type', 'complaint_subtype'],
+              'handling': ['complaint_id', 'handler_id', 'hall_id', 'accept_time', 'customer_feedback', 'customer_name'],
+              'customer': ['customer_id', 'customer_name', 'customer_level'],
+              'employee': ['handler_id', 'handler_name', 'hall_id'],
+              'hall': ['hall_id', 'hall_name', 'region'],
+          }
+
+          def dump_json(value):
+              return json.dumps(value, ensure_ascii=False, separators=(',', ':'))
+
+          def empty(value):
+              return value is None or str(value).strip() == ''
+
+          def write_csv(header, rows):
+              stream = io.StringIO(newline='')
+              writer = csv.writer(stream, lineterminator='\n')
+              writer.writerow(header)
+              writer.writerows([[row.get(key, '') for key in header] for row in rows])
+              return stream.getvalue()
+
+          def read_csv(text):
+              if not isinstance(text, str) or not text.strip():
+                  raise ValueError('上游表格为空或不是字符串')
+              records = list(csv.reader(io.StringIO(text, newline=''), strict=True))
+              if not records or not records[0] or len(set(records[0])) != len(records[0]):
+                  raise ValueError('CSV 表头为空或重复')
+              header = records[0]
+              rows = []
+              for line, cells in enumerate(records[1:], 2):
+                  if len(cells) != len(header):
+                      raise ValueError('CSV 第 {} 行列数与表头不一致'.format(line))
+                  rows.append(dict(zip(header, cells)))
+              return header, rows
+
+          def index_rows(rows):
+              result = {}
+              for row in rows:
+                  value = row.get('source_row_index', '')
+                  if not re.fullmatch(r'0|[1-9]\d*', str(value)):
+                      raise ValueError('source_row_index 缺失或不是非负整数')
+                  index = int(value)
+                  if index in result:
+                      raise ValueError('source_row_index 重复：{}'.format(index))
+                  result[index] = row
+              return result
+
+          def valid_id(value, column):
+              patterns = {'complaint_id': r'TS\d{10}', 'customer_id': r'CUST\d{4}',
+                          'handler_id': r'EMP\d{4}', 'hall_id': r'HALL\d{3}'}
+              return isinstance(value, str) and re.fullmatch(patterns[column], value) is not None
+
+          def relation(rows, source, target):
+              mapping = defaultdict(set)
+              for row in rows:
+                  a, b = row.get(source, ''), row.get(target, '')
+                  if empty(a) or empty(b) or '记录丢失' in str(a) or '记录丢失' in str(b):
+                      continue
+                  if source.endswith('_id') and not valid_id(a, source):
+                      continue
+                  if target.endswith('_id') and not valid_id(b, target):
+                      continue
+                  mapping[a].add(b)
+              return mapping
+
+
+          from bisect import bisect_left
+          from datetime import datetime
+
+          MARK = {
+              'complaint_id': '该条投诉号记录丢失', 'accept_time': '该条时间记录丢失',
+              'customer_id': '该条客户记录丢失', 'customer_name': '该条客户记录丢失',
+              'handler_id': '该条员工记录丢失', 'handler_name': '该条员工记录丢失',
+              'hall_id': '该条营业厅记录丢失', 'package_type': '该条套餐记录丢失',
+              'complaint_type': '该条投诉类型记录丢失', 'complaint_subtype': '该条投诉子类记录丢失',
+              'customer_feedback': '该条反馈记录丢失',
+          }
+
+          def real_time(value):
+              if not isinstance(value, str) or not re.fullmatch(r'\d{4}/\d{2}/\d{2} \d{2}:\d{2}', value):
+                  return False
+              try:
+                  datetime.strptime(value, '%Y/%m/%d %H:%M')
+                  return True
+              except ValueError:
+                  return False
+
+          def main(record_id_csv, handling_id_csv, customer_id_csv, employee_id_csv, hall_id_csv):
+              tables = {name: read_csv(text) for name, text in zip(TABLES, [record_id_csv, handling_id_csv, customer_id_csv, employee_id_csv, hall_id_csv])}
+              records, handling = index_rows(tables['record'][1]), index_rows(tables['handling'][1])
+              for name in ['customer', 'employee', 'hall']:
+                  index_rows(tables[name][1])
+              deleted = {i for i, row in records.items() if empty(row['complaint_description'])}
+              kept = [int(row['source_row_index']) for row in tables['record'][1] if int(row['source_row_index']) not in deleted]
+              fill = {'record': Counter(), 'handling': Counter()}
+              placeholders = {'record': Counter(), 'handling': Counter()}
+              conflict_counts = {'record': Counter(), 'handling': Counter()}
+              conflicts, inference, unresolved = [], [], []
+              conflict_seen = set()
+              conflict_cells = set()
+              cross_counts = {'complaint_id': 0, 'accept_time': 0}
+              cross_by_table = {'record': Counter(), 'handling': Counter()}
+              master_by_table = {'record': Counter(), 'handling': Counter()}
+              infer_by_table = {'record': 0, 'handling': 0}
+
+              def conflict(table, sri, column, reason):
+                  key = (table, sri, column, reason)
+                  if key in conflict_seen:
+                      return
+                  conflict_seen.add(key)
+                  cell = (table, sri, column)
+                  if cell not in conflict_cells:
+                      conflict_cells.add(cell)
+                      conflict_counts[table][column] += 1
+                  conflicts.append({'table': table, 'source_row_index': sri, 'column': column, 'reason': reason})
+
+              def set_blank(table, sri, column, value, method):
+                  row = records[sri] if table == 'record' else handling[sri]
+                  if not empty(row.get(column, '')) or empty(value) or '记录丢失' in str(value):
+                      return False
+                  if column.endswith('_id') and not valid_id(value, column):
+                      return False
+                  if column == 'accept_time' and not real_time(value):
+                      return False
+                  row[column] = value
+                  fill[table][column] += 1
+                  if method == 'cross_table':
+                      cross_counts[column] += 1
+                      cross_by_table[table][column] += 1
+                  elif method == 'master':
+                      master_by_table[table][column] += 1
+                  elif method == 'row_inference':
+                      infer_by_table[table] += 1
+                  return True
+
+              # Snapshot original known IDs BEFORE deletion or filling. A deleted complaint
+              # can provide a known neighbour; inferred IDs never become new evidence.
+              anchors, blocked = {}, set()
+              owners = defaultdict(set)
+              for sri in sorted(records.keys() | handling.keys()):
+                  values = [mapping[sri].get('complaint_id', '') for mapping in [records, handling] if sri in mapping]
+                  known = {v for v in values if valid_id(v, 'complaint_id')}
+                  if len(known) == 1 and not any(not empty(v) and not valid_id(v, 'complaint_id') for v in values):
+                      anchors[sri] = next(iter(known))
+                      owners[anchors[sri]].add(sri)
+                  elif len(known) > 1 or any(not empty(v) and not valid_id(v, 'complaint_id') for v in values):
+                      blocked.add(sri)
+              for sri, value in list(anchors.items()):
+                  if len(owners[value]) > 1:
+                      del anchors[sri]
+                      blocked.add(sri)
+              anchor_order = sorted(anchors)
+
+              cname_to_id = relation(tables['customer'][1], 'customer_name', 'customer_id')
+              cid_to_name = relation(tables['customer'][1], 'customer_id', 'customer_name')
+              ename_to_id = relation(tables['employee'][1], 'handler_name', 'handler_id')
+              eid_to_name = relation(tables['employee'][1], 'handler_id', 'handler_name')
+
+              for sri in kept:
+                  if sri not in handling:
+                      conflict('record', sri, 'source_row_index', 'handling_row_missing')
+                      continue
+                  r, h = records[sri], handling[sri]
+                  if valid_id(r['complaint_id'], 'complaint_id') and valid_id(h['complaint_id'], 'complaint_id') and r['complaint_id'] != h['complaint_id']:
+                      conflict('record', sri, 'complaint_id', 'cross_table_conflict')
+                      conflict('handling', sri, 'complaint_id', 'cross_table_conflict')
+                      continue
+                  for column in ['complaint_id', 'accept_time']:
+                      a, b = r[column], h[column]
+                      if empty(a) and not empty(b):
+                          set_blank('record', sri, column, b, 'cross_table')
+                      elif empty(b) and not empty(a):
+                          set_blank('handling', sri, column, a, 'cross_table')
+                      elif not empty(a) and not empty(b) and a != b:
+                          conflict('record', sri, column, 'cross_table_conflict')
+                          conflict('handling', sri, column, 'cross_table_conflict')
+
+                  pairs = [
+                      ('record', 'customer_id', h['customer_name'], cname_to_id, 'handling', 'customer_name', cid_to_name),
+                      ('handling', 'handler_id', r['handler_name'], ename_to_id, 'record', 'handler_name', eid_to_name),
+                  ]
+                  for id_table, id_column, name, name_to_id, name_table, name_column, id_to_name in pairs:
+                      id_row = r if id_table == 'record' else h
+                      if empty(id_row[id_column]) and not empty(name):
+                          candidates = name_to_id.get(name, set())
+                          if len(candidates) == 1:
+                              candidate = next(iter(candidates))
+                              if id_to_name.get(candidate) == {name}:
+                                  set_blank(id_table, sri, id_column, candidate, 'master')
+                              else:
+                                  conflict(id_table, sri, id_column, 'master_id_name_conflict')
+                          elif len(candidates) > 1:
+                              conflict(id_table, sri, id_column, 'duplicate_name')
+                      identifier = id_row[id_column]
+                      name_row = r if name_table == 'record' else h
+                      candidates = id_to_name.get(identifier, set())
+                      if empty(name_row[name_column]) and len(candidates) == 1:
+                          set_blank(name_table, sri, name_column, next(iter(candidates)), 'master')
+                      elif empty(name_row[name_column]) and len(candidates) > 1:
+                          conflict(name_table, sri, name_column, 'master_id_name_conflict')
+                      elif not empty(name_row[name_column]) and candidates and name_row[name_column] not in candidates:
+                          conflict(name_table, sri, name_column, 'master_relation_conflict')
+
+              inferred_ids = set()
+              for sri in kept:
+                  if sri not in handling or not empty(records[sri]['complaint_id']) or not empty(handling[sri]['complaint_id']):
+                      continue
+                  pos = bisect_left(anchor_order, sri)
+                  if pos == 0 or pos == len(anchor_order):
+                      unresolved.append({'source_row_index': sri, 'reason': 'two_sided_anchors_missing'})
+                      continue
+                  before, after = anchor_order[pos - 1], anchor_order[pos]
+                  left, right = anchors[before], anchors[after]
+                  if any(before <= x <= after for x in blocked) or left[2:8] != right[2:8] or int(right[2:]) - int(left[2:]) != after - before:
+                      unresolved.append({'source_row_index': sri, 'reason': 'anchors_not_unique_or_sequence_break', 'before': before, 'after': after})
+                      continue
+                  candidate = 'TS' + str(int(left[2:]) + sri - before).zfill(10)
+                  if candidate in owners or candidate in inferred_ids:
+                      unresolved.append({'source_row_index': sri, 'reason': 'inferred_id_already_used'})
+                      continue
+                  count = int(set_blank('record', sri, 'complaint_id', candidate, 'row_inference'))
+                  count += int(set_blank('handling', sri, 'complaint_id', candidate, 'row_inference'))
+                  if count:
+                      inferred_ids.add(candidate)
+                      inference.append({'source_row_index': sri, 'complaint_id': candidate, 'filled_cells': count,
+                                        'before': {'source_row_index': before, 'complaint_id': left},
+                                        'after': {'source_row_index': after, 'complaint_id': right},
+                                        'rule': 'id_difference == source_row_difference; both original anchors'})
+
+              # Only truly blank fields get placeholders. Non-empty invalid originals stay
+              # intact and are reported. Hall affiliation is never used as reception hall.
+              for table, mapping in [('record', records), ('handling', handling)]:
+                  for sri in kept:
+                      if sri not in mapping:
+                          continue
+                      row = mapping[sri]
+                      for column, marker in MARK.items():
+                          if column not in row:
+                              continue
+                          if empty(row[column]):
+                              row[column] = marker
+                              placeholders[table][column] += 1
+                          elif column.endswith('_id') and not valid_id(row[column], column):
+                              conflict(table, sri, column, 'nonempty_invalid_preserved')
+                          elif column == 'accept_time' and not real_time(row[column]):
+                              conflict(table, sri, column, 'nonempty_invalid_preserved')
+              out_record = [r for r in tables['record'][1] if int(r['source_row_index']) not in deleted]
+              out_handling = [r for r in tables['handling'][1] if int(r['source_row_index']) not in deleted]
+              # Unmatched handling rows are retained and reported, not silently discarded.
+              orphan_handling = sorted(handling.keys() - records.keys())
+              stats = {}
+              for name in ['record', 'handling']:
+                  stats[name] = {'filled_cells': sum(fill[name].values()), 'fill_by_field': dict(fill[name]),
+                                 'cross_table_by_field': dict(cross_by_table[name]), 'master_by_field': dict(master_by_table[name]),
+                                 'inferred_id_cells': infer_by_table[name], 'placeholder_by_field': dict(placeholders[name]),
+                                 'conflict_by_field': dict(conflict_counts[name])}
+              report = {'tables': stats, 'deleted_count': len(deleted), 'final_count': len(out_record),
+                        'handling_final_count': len(out_handling), 'deleted_source_row_indices': sorted(deleted),
+                        'cross_id_filled_cells': cross_counts['complaint_id'], 'cross_time_filled_cells': cross_counts['accept_time'],
+                        'inferred_id_filled_cells': sum(infer_by_table.values()), 'inferred_complaints': len(inference),
+                        'inference_evidence': inference, 'unresolved_inference': unresolved, 'conflicts': conflicts,
+                        'orphan_handling_source_rows': orphan_handling}
+              return {'record_clean_csv': write_csv(tables['record'][0], out_record),
+                      'handling_clean_csv': write_csv(tables['handling'][0], out_handling),
+                      'record_fill_count': sum(fill['record'].values()), 'handling_fill_count': sum(fill['handling'].values()),
+                      'deleted_count': len(deleted), 'final_count': len(out_record), 'clean_report_json': dump_json(report)}
+        variables:
+        - variable: record_id_csv
+          value_selector:
+          - '1794725952559'
+          - record_id_csv
+          value_type: string
+        - variable: handling_id_csv
+          value_selector:
+          - '1794725952559'
+          - handling_id_csv
+          value_type: string
+        - variable: customer_id_csv
+          value_selector:
+          - '1794725952559'
+          - customer_id_csv
+          value_type: string
+        - variable: employee_id_csv
+          value_selector:
+          - '1794725952559'
+          - employee_id_csv
+          value_type: string
+        - variable: hall_id_csv
+          value_selector:
+          - '1794725952559'
+          - hall_id_csv
+          value_type: string
+        outputs:
+          record_clean_csv:
+            type: string
+            children: 
+          handling_clean_csv:
+            type: string
+            children: 
+          clean_report_json:
+            type: string
+            children: 
+          record_fill_count:
+            type: number
+            children: 
+          handling_fill_count:
+            type: number
+            children: 
+          deleted_count:
+            type: number
+            children: 
+          final_count:
+            type: number
+            children: 
+        desc: 按原始行号对齐；先取原始编号依据，最终同步删除描述为空的投诉。重名不猜测，不以员工所属厅代替受理厅。
+        selected: false
+      type: custom
+      width: 250
+      height: 80
+      sourcePosition: right
+      targetPosition: left
+      position:
+        x: 1980
+        y: 300
+      positionAbsolute:
+        x: 1980
+        y: 300
+      selected: false
+    - id: '1794750000003'
+      data:
+        title: 07 生成五张 Markdown 表
+        type: code
+        code_language: python3
+        code: |
+          import csv
+          import io
+          import json
+          import re
+          from collections import Counter, defaultdict
+
+          TABLES = ['record', 'handling', 'customer', 'employee', 'hall']
+          FIELDS = {
+              'record': ['complaint_id', 'accept_time', 'customer_id', 'handler_name', 'package_type', 'complaint_description', 'complaint_type', 'complaint_subtype'],
+              'handling': ['complaint_id', 'handler_id', 'hall_id', 'accept_time', 'customer_feedback', 'customer_name'],
+              'customer': ['customer_id', 'customer_name', 'customer_level'],
+              'employee': ['handler_id', 'handler_name', 'hall_id'],
+              'hall': ['hall_id', 'hall_name', 'region'],
+          }
+
+          def dump_json(value):
+              return json.dumps(value, ensure_ascii=False, separators=(',', ':'))
+
+          def empty(value):
+              return value is None or str(value).strip() == ''
+
+          def write_csv(header, rows):
+              stream = io.StringIO(newline='')
+              writer = csv.writer(stream, lineterminator='\n')
+              writer.writerow(header)
+              writer.writerows([[row.get(key, '') for key in header] for row in rows])
+              return stream.getvalue()
+
+          def read_csv(text):
+              if not isinstance(text, str) or not text.strip():
+                  raise ValueError('上游表格为空或不是字符串')
+              records = list(csv.reader(io.StringIO(text, newline=''), strict=True))
+              if not records or not records[0] or len(set(records[0])) != len(records[0]):
+                  raise ValueError('CSV 表头为空或重复')
+              header = records[0]
+              rows = []
+              for line, cells in enumerate(records[1:], 2):
+                  if len(cells) != len(header):
+                      raise ValueError('CSV 第 {} 行列数与表头不一致'.format(line))
+                  rows.append(dict(zip(header, cells)))
+              return header, rows
+
+          def index_rows(rows):
+              result = {}
+              for row in rows:
+                  value = row.get('source_row_index', '')
+                  if not re.fullmatch(r'0|[1-9]\d*', str(value)):
+                      raise ValueError('source_row_index 缺失或不是非负整数')
+                  index = int(value)
+                  if index in result:
+                      raise ValueError('source_row_index 重复：{}'.format(index))
+                  result[index] = row
+              return result
+
+          def valid_id(value, column):
+              patterns = {'complaint_id': r'TS\d{10}', 'customer_id': r'CUST\d{4}',
+                          'handler_id': r'EMP\d{4}', 'hall_id': r'HALL\d{3}'}
+              return isinstance(value, str) and re.fullmatch(patterns[column], value) is not None
+
+          def relation(rows, source, target):
+              mapping = defaultdict(set)
+              for row in rows:
+                  a, b = row.get(source, ''), row.get(target, '')
+                  if empty(a) or empty(b) or '记录丢失' in str(a) or '记录丢失' in str(b):
+                      continue
+                  if source.endswith('_id') and not valid_id(a, source):
+                      continue
+                  if target.endswith('_id') and not valid_id(b, target):
+                      continue
+                  mapping[a].add(b)
+              return mapping
+
+
+          def markdown_cell(value):
+              # Preserve readable characters while preventing cell contents from creating
+              # new Markdown columns or rows. Literal backslashes are escaped first.
+              return str(value).replace('\\', '\\\\').replace('|', '\\|').replace('\r\n', '<br>').replace('\n', '<br>').replace('\r', '<br>')
+
+          def main(record_clean_csv, handling_clean_csv, customer_id_csv, employee_id_csv, hall_id_csv):
+              result = {}
+              for name, text in zip(TABLES, [record_clean_csv, handling_clean_csv, customer_id_csv, employee_id_csv, hall_id_csv]):
+                  header, rows = read_csv(text)
+                  lines = ['| ' + ' | '.join(map(markdown_cell, header)) + ' |', '| ' + ' | '.join(['---'] * len(header)) + ' |']
+                  lines.extend('| ' + ' | '.join(markdown_cell(row[column]) for column in header) + ' |' for row in rows)
+                  result[name + '_md'] = '\n'.join(lines) + '\n'
+              return result
+        variables:
+        - variable: record_clean_csv
+          value_selector:
+          - '1794725957535'
+          - record_clean_csv
+          value_type: string
+        - variable: handling_clean_csv
+          value_selector:
+          - '1794725957535'
+          - handling_clean_csv
+          value_type: string
+        - variable: customer_id_csv
+          value_selector:
+          - '1794725952559'
+          - customer_id_csv
+          value_type: string
+        - variable: employee_id_csv
+          value_selector:
+          - '1794725952559'
+          - employee_id_csv
+          value_type: string
+        - variable: hall_id_csv
+          value_selector:
+          - '1794725952559'
+          - hall_id_csv
+          value_type: string
+        outputs:
+          record_md:
+            type: string
+            children: 
+          handling_md:
+            type: string
+            children: 
+          customer_md:
+            type: string
+            children: 
+          employee_md:
+            type: string
+            children: 
+          hall_md:
+            type: string
+            children: 
+        desc: 两张投诉表取 06，三张主表直接取 05；仅做文件展示格式转换。
+        selected: false
+      type: custom
+      width: 250
+      height: 80
+      sourcePosition: right
+      targetPosition: left
+      position:
+        x: 2310
+        y: 300
+      positionAbsolute:
+        x: 2310
+        y: 300
+      selected: false
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          label:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          llm_description: ''
+          max: 
+          min: 
+          name: md_text
+          options: []
+          placeholder: 
+          precision: 
+          required: true
+          scope: 
+          template: 
+          type: string
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Optional custom output file name, and the filename suffix is not
+              required.
+            ja_JP: Optional custom output file name, and the filename suffix is not
+              required.
+            pt_BR: Optional custom output file name, and the filename suffix is not
+              required.
+            zh_Hans: 可选的自定义输出文件名，后缀名无需指定
+          label:
+            en_US: Output Filename
+            ja_JP: Output Filename
+            pt_BR: Output Filename
+            zh_Hans: 输出文件名
+          llm_description: ''
+          max: 
+          min: 
+          name: output_filename
+          options: []
+          placeholder: 
+          precision: 
+          required: false
+          scope: 
+          template: 
+          type: string
+        params:
+          md_text: ''
+          output_filename: ''
+        plugin_id: bowenliang123/md_exporter
+        plugin_unique_identifier: bowenliang123/md_exporter:4.0.0@eff5440a18b9fa10d7fe3f0a1b5a2ef1bf78ab8a19dd92e273daf7a346553106
+        provider_id: bowenliang123/md_exporter/md_exporter
+        provider_name: bowenliang123/md_exporter/md_exporter
+        provider_type: builtin
+        selected: false
+        title: 导出 complaint_record.md
+        tool_configurations: {}
+        tool_description: 将 Markdown 转换为 .md 文件的工具
+        tool_label: Markdown ⮕ MD
+        tool_name: md_to_md
+        tool_node_version: '2'
+        tool_parameters:
+          md_text:
+            type: mixed
+            value: "{{#1794750000003.record_md#}}"
+          output_filename:
+            type: mixed
+            value: complaint_record
+        type: tool
+      height: 52
+      id: '1794725969863'
+      position:
+        x: 2640
+        y: 80
+      positionAbsolute:
+        x: 2640
+        y: 80
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          label:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          llm_description: ''
+          max: 
+          min: 
+          name: md_text
+          options: []
+          placeholder: 
+          precision: 
+          required: true
+          scope: 
+          template: 
+          type: string
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Optional custom output file name, and the filename suffix is not
+              required.
+            ja_JP: Optional custom output file name, and the filename suffix is not
+              required.
+            pt_BR: Optional custom output file name, and the filename suffix is not
+              required.
+            zh_Hans: 可选的自定义输出文件名，后缀名无需指定
+          label:
+            en_US: Output Filename
+            ja_JP: Output Filename
+            pt_BR: Output Filename
+            zh_Hans: 输出文件名
+          llm_description: ''
+          max: 
+          min: 
+          name: output_filename
+          options: []
+          placeholder: 
+          precision: 
+          required: false
+          scope: 
+          template: 
+          type: string
+        params:
+          md_text: ''
+          output_filename: ''
+        plugin_id: bowenliang123/md_exporter
+        plugin_unique_identifier: bowenliang123/md_exporter:4.0.0@eff5440a18b9fa10d7fe3f0a1b5a2ef1bf78ab8a19dd92e273daf7a346553106
+        provider_id: bowenliang123/md_exporter/md_exporter
+        provider_name: bowenliang123/md_exporter/md_exporter
+        provider_type: builtin
+        selected: false
+        title: 导出 complaint_handling.md
+        tool_configurations: {}
+        tool_description: 将 Markdown 转换为 .md 文件的工具
+        tool_label: Markdown ⮕ MD
+        tool_name: md_to_md
+        tool_node_version: '2'
+        tool_parameters:
+          md_text:
+            type: mixed
+            value: "{{#1794750000003.handling_md#}}"
+          output_filename:
+            type: mixed
+            value: complaint_handling
+        type: tool
+      height: 52
+      id: '1794725977431'
+      position:
+        x: 2640
+        y: 210
+      positionAbsolute:
+        x: 2640
+        y: 210
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          label:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          llm_description: ''
+          max: 
+          min: 
+          name: md_text
+          options: []
+          placeholder: 
+          precision: 
+          required: true
+          scope: 
+          template: 
+          type: string
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Optional custom output file name, and the filename suffix is not
+              required.
+            ja_JP: Optional custom output file name, and the filename suffix is not
+              required.
+            pt_BR: Optional custom output file name, and the filename suffix is not
+              required.
+            zh_Hans: 可选的自定义输出文件名，后缀名无需指定
+          label:
+            en_US: Output Filename
+            ja_JP: Output Filename
+            pt_BR: Output Filename
+            zh_Hans: 输出文件名
+          llm_description: ''
+          max: 
+          min: 
+          name: output_filename
+          options: []
+          placeholder: 
+          precision: 
+          required: false
+          scope: 
+          template: 
+          type: string
+        params:
+          md_text: ''
+          output_filename: ''
+        plugin_id: bowenliang123/md_exporter
+        plugin_unique_identifier: bowenliang123/md_exporter:4.0.0@eff5440a18b9fa10d7fe3f0a1b5a2ef1bf78ab8a19dd92e273daf7a346553106
+        provider_id: bowenliang123/md_exporter/md_exporter
+        provider_name: bowenliang123/md_exporter/md_exporter
+        provider_type: builtin
+        selected: false
+        title: 导出 customer_info.md
+        tool_configurations: {}
+        tool_description: 将 Markdown 转换为 .md 文件的工具
+        tool_label: Markdown ⮕ MD
+        tool_name: md_to_md
+        tool_node_version: '2'
+        tool_parameters:
+          md_text:
+            type: mixed
+            value: "{{#1794750000003.customer_md#}}"
+          output_filename:
+            type: mixed
+            value: customer_info
+        type: tool
+      height: 52
+      id: '1794725982707'
+      position:
+        x: 2640
+        y: 340
+      positionAbsolute:
+        x: 2640
+        y: 340
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          label:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          llm_description: ''
+          max: 
+          min: 
+          name: md_text
+          options: []
+          placeholder: 
+          precision: 
+          required: true
+          scope: 
+          template: 
+          type: string
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Optional custom output file name, and the filename suffix is not
+              required.
+            ja_JP: Optional custom output file name, and the filename suffix is not
+              required.
+            pt_BR: Optional custom output file name, and the filename suffix is not
+              required.
+            zh_Hans: 可选的自定义输出文件名，后缀名无需指定
+          label:
+            en_US: Output Filename
+            ja_JP: Output Filename
+            pt_BR: Output Filename
+            zh_Hans: 输出文件名
+          llm_description: ''
+          max: 
+          min: 
+          name: output_filename
+          options: []
+          placeholder: 
+          precision: 
+          required: false
+          scope: 
+          template: 
+          type: string
+        params:
+          md_text: ''
+          output_filename: ''
+        plugin_id: bowenliang123/md_exporter
+        plugin_unique_identifier: bowenliang123/md_exporter:4.0.0@eff5440a18b9fa10d7fe3f0a1b5a2ef1bf78ab8a19dd92e273daf7a346553106
+        provider_id: bowenliang123/md_exporter/md_exporter
+        provider_name: bowenliang123/md_exporter/md_exporter
+        provider_type: builtin
+        selected: false
+        title: 导出 employee_info.md
+        tool_configurations: {}
+        tool_description: 将 Markdown 转换为 .md 文件的工具
+        tool_label: Markdown ⮕ MD
+        tool_name: md_to_md
+        tool_node_version: '2'
+        tool_parameters:
+          md_text:
+            type: mixed
+            value: "{{#1794750000003.employee_md#}}"
+          output_filename:
+            type: mixed
+            value: employee_info
+        type: tool
+      height: 52
+      id: '1794725986671'
+      position:
+        x: 2640
+        y: 470
+      positionAbsolute:
+        x: 2640
+        y: 470
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        is_team_authorization: true
+        paramSchemas:
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          label:
+            en_US: Markdown text
+            ja_JP: Markdown text
+            pt_BR: Markdown text
+            zh_Hans: Markdown格式文本
+          llm_description: ''
+          max: 
+          min: 
+          name: md_text
+          options: []
+          placeholder: 
+          precision: 
+          required: true
+          scope: 
+          template: 
+          type: string
+        - auto_generate: 
+          default: 
+          form: llm
+          human_description:
+            en_US: Optional custom output file name, and the filename suffix is not
+              required.
+            ja_JP: Optional custom output file name, and the filename suffix is not
+              required.
+            pt_BR: Optional custom output file name, and the filename suffix is not
+              required.
+            zh_Hans: 可选的自定义输出文件名，后缀名无需指定
+          label:
+            en_US: Output Filename
+            ja_JP: Output Filename
+            pt_BR: Output Filename
+            zh_Hans: 输出文件名
+          llm_description: ''
+          max: 
+          min: 
+          name: output_filename
+          options: []
+          placeholder: 
+          precision: 
+          required: false
+          scope: 
+          template: 
+          type: string
+        params:
+          md_text: ''
+          output_filename: ''
+        plugin_id: bowenliang123/md_exporter
+        plugin_unique_identifier: bowenliang123/md_exporter:4.0.0@eff5440a18b9fa10d7fe3f0a1b5a2ef1bf78ab8a19dd92e273daf7a346553106
+        provider_id: bowenliang123/md_exporter/md_exporter
+        provider_name: bowenliang123/md_exporter/md_exporter
+        provider_type: builtin
+        selected: false
+        title: 导出 hall_info.md
+        tool_configurations: {}
+        tool_description: 将 Markdown 转换为 .md 文件的工具
+        tool_label: Markdown ⮕ MD
+        tool_name: md_to_md
+        tool_node_version: '2'
+        tool_parameters:
+          md_text:
+            type: mixed
+            value: "{{#1794750000003.hall_md#}}"
+          output_filename:
+            type: mixed
+            value: hall_info
+        type: tool
+      height: 52
+      id: '1794726005592'
+      position:
+        x: 2640
+        y: 600
+      positionAbsolute:
+        x: 2640
+        y: 600
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - id: '1794750000004'
+      data:
+        title: '08 校验与统计'
+        type: code
+        code_language: python3
+        code: |
+          import json
+
+          def main(record_time_count, handling_time_count, record_id_count, handling_id_count,
+                   record_fill_count, handling_fill_count, deleted_count, final_count,
+                   id_report_json, clean_report_json):
+              ids, clean = json.loads(id_report_json), json.loads(clean_report_json)
+              # Expected values are used ONLY in this independent verification node.
+              # All cleaning nodes calculate their results from inputs.
+              checks = [
+                  ('投诉记录表时间修复行数', record_time_count, 420),
+                  ('投诉处理表时间修复行数', handling_time_count, 415),
+                  ('投诉记录表 ID 修复单元格数', record_id_count, 856),
+                  ('投诉处理表 ID 修复单元格数', handling_id_count, 1272),
+                  ('两张投诉表 ID 修复单元格合计', record_id_count + handling_id_count, 2128),
+                  ('客户主表 ID 修复单元格数', ids['tables']['customer']['fixed_cells'], 0),
+                  ('员工主表 ID 修复单元格数', ids['tables']['employee']['fixed_cells'], 0),
+                  ('营业厅主表 ID 修复单元格数', ids['tables']['hall']['fixed_cells'], 0),
+                  ('删除投诉数', deleted_count, 279),
+                  ('最终保留投诉数', final_count, 1719),
+                  ('投诉 ID 跨表补全单元格数', clean['cross_id_filled_cells'], 448),
+                  ('投诉 ID 按原始行序推定单元格数', clean['inferred_id_filled_cells'], 118),
+              ]
+              all_ok = all(actual == expected for _, actual, expected in checks)
+              report = [{'item': label, 'actual': actual, 'expected': expected, 'passed': actual == expected} for label, actual, expected in checks]
+              rt, ht = clean['tables']['record'], clean['tables']['handling']
+              lines = ['## 清洗结果说明', '',
+                       '本次数据集的预设校验项目' + ('全部通过。' if all_ok else '存在差异，请查看下方核对表。'), '',
+                       '### 1. 时间与 ID 格式修复', '',
+                       '| 指标 | 投诉记录表 | 投诉处理表 | 数字含义 |',
+                       '| --- | ---: | ---: | --- |',
+                       '| 时间格式修复 | {} 行 | {} 行 | 将非基准格式转换为 年/月/日 时:分；仅有日期时补 00:00，计入修复。原有斜杠日期时间仅补零不计入。 |'.format(record_time_count, handling_time_count),
+                       '| ID 格式修复 | {} 个单元格 | {} 个单元格 | 修复原本有值的 ID 写法，如大小写、数字补位、中文序号还原；同一行改两个 ID 计两个。 |'.format(record_id_count, handling_id_count),
+                       '| ID 修复涉及记录 | {} 行 | {} 行 | 至少一个 ID 单元格发生格式修复的记录数；同一行只计一次。 |'.format(ids['tables']['record']['affected_rows'], ids['tables']['handling']['affected_rows']),
+                       '| ID 还原阶段的空白 ID | {} 个单元格 | {} 个单元格 | 05 节点处理时发现的空白 ID，尚未补全和删除，交给后续节点处理。 |'.format(ids['tables']['record']['blank_ids'], ids['tables']['handling']['blank_ids']),
+                       '', '两张投诉表共修复 {} 个非空 ID 单元格。客户、员工、营业厅三张主表分别修复 {}、{}、{} 个 ID 单元格。'.format(record_id_count + handling_id_count, ids['tables']['customer']['fixed_cells'], ids['tables']['employee']['fixed_cells'], ids['tables']['hall']['fixed_cells']),
+                       '', '### 2. 缺失值还原与删除', '',
+                       '| 指标 | 实际结果 | 数字含义 |', '| --- | ---: | --- |',
+                       '| 投诉记录表实际补全 | {} 个单元格 | 最终保留记录中，从空白补成可确认真实值的字段数量。 |'.format(record_fill_count),
+                       '| 投诉处理表实际补全 | {} 个单元格 | 与上一指标口径相同，统计投诉处理表。 |'.format(handling_fill_count),
+                       '| 投诉 ID 跨表补全 | {} 个单元格 | 同一原始行中，一张表的投诉 ID 为空，从另一张表复制已知 ID；两张表合计。 |'.format(clean['cross_id_filled_cells']),
+                       '| 投诉 ID 按行序推定 | {} 个单元格，涉及 {} 条投诉 | 两张表都缺 ID，利用原始行序前后已知编号唯一推定；一条投诉在两张表分别补值，计两个单元格。 |'.format(clean['inferred_id_filled_cells'], clean['inferred_complaints']),
+                       '| 受理时间跨表补全 | {} 个单元格 | 从另一张表补入可确认的受理时间；两张表合计。 |'.format(clean['cross_time_filled_cells']),
+                       '| 删除投诉 | {} 条 | 投诉描述为空的投诉数；对应处理记录同步删除，不重复计数。 |'.format(deleted_count),
+                       '| 最终保留投诉 | {} 条 | 删除后投诉记录表剩余行数。 |'.format(final_count),
+                       '| 最终保留处理记录 | {} 条 | 删除后投诉处理表剩余行数。 |'.format(clean['handling_final_count']),
+                       '', '实际补全只统计“空白→真实值”。“记录丢失”等占位文字、原本非空的字段以及最终删除的记录，都不计入补全数。',
+                       '上述跨表补全与行序推定是实际补全总数的组成部分，不能再与总数相加。',
+                       '', '### 3. 最终保留记录的字段明细', '',
+                       '| 表 | 字段 | 实际补全单元格 | 填入丢失标记的单元格 | 问题或冲突单元格 |',
+                       '| --- | --- | ---: | ---: | ---: |']
+              labels = {'complaint_id': '投诉 ID', 'accept_time': '受理时间', 'customer_id': '客户 ID',
+                        'customer_name': '客户姓名', 'handler_id': '员工 ID', 'handler_name': '员工姓名',
+                        'hall_id': '受理营业厅 ID', 'package_type': '套餐类型', 'complaint_type': '投诉类型',
+                        'complaint_subtype': '投诉子类', 'customer_feedback': '客户反馈'}
+              for name, label in [('record', '投诉记录表'), ('handling', '投诉处理表')]:
+                  info = clean['tables'][name]
+                  for field, field_label in labels.items():
+                      values = [info[key].get(field, 0) for key in ['fill_by_field', 'placeholder_by_field', 'conflict_by_field']]
+                      if any(values):
+                          lines.append('| {} | {} | {} | {} | {} |'.format(label, field_label, *values))
+              lines += ['', '“丢失标记”表示没有可靠依据还原；“问题或冲突”包括重名无法唯一匹配、关联冲突、保留的非空无效值。同一单元格的多个原因只计一次。',
+                        '问题单元格可能同时填入丢失标记，两列不能相加当作缺失总数。员工所属营业厅不用于推定实际受理营业厅。',
+                        '', '### 4. 当前数据集校验', '',
+                       '| 校验项目 | 实际值 | 校验值 | 结果 |', '| --- | ---: | ---: | --- |']
+              lines.extend('| {} | {} | {} | {} |'.format(label, actual, expected, '通过' if actual == expected else '不一致') for label, actual, expected in checks)
+              lines.extend(['', '以上校验值仅适用于本次考试数据；更换数据后应以实际计算结果为准。',
+                            '输出的五个 MD 文件对应五张表；source_row_index 是从 0 开始的原始记录序号，删除后保留间断，用于追溯来源。'])
+              return {'validation_ok': all_ok, 'validation_json': json.dumps(report, ensure_ascii=False, separators=(',', ':')),
+                      'check_summary': '\n'.join(lines), 'cross_id_fill_count': clean['cross_id_filled_cells'],
+                      'inferred_id_fill_count': clean['inferred_id_filled_cells']}
+        variables:
+        - variable: record_time_count
+          value_selector:
+          - '1794725948489'
+          - record_fix_count
+          value_type: number
+        - variable: handling_time_count
+          value_selector:
+          - '1794725948489'
+          - handling_fix_count
+          value_type: number
+        - variable: record_id_count
+          value_selector:
+          - '1794725952559'
+          - record_fix_count
+          value_type: number
+        - variable: handling_id_count
+          value_selector:
+          - '1794725952559'
+          - handling_fix_count
+          value_type: number
+        - variable: record_fill_count
+          value_selector:
+          - '1794725957535'
+          - record_fill_count
+          value_type: number
+        - variable: handling_fill_count
+          value_selector:
+          - '1794725957535'
+          - handling_fill_count
+          value_type: number
+        - variable: deleted_count
+          value_selector:
+          - '1794725957535'
+          - deleted_count
+          value_type: number
+        - variable: final_count
+          value_selector:
+          - '1794725957535'
+          - final_count
+          value_type: number
+        - variable: id_report_json
+          value_selector:
+          - '1794725952559'
+          - id_report_json
+          value_type: string
+        - variable: clean_report_json
+          value_selector:
+          - '1794725957535'
+          - clean_report_json
+          value_type: string
+        outputs:
+          validation_json:
+            type: string
+            children: 
+          check_summary:
+            type: string
+            children: 
+          cross_id_fill_count:
+            type: number
+            children: 
+          inferred_id_fill_count:
+            type: number
+            children: 
+          validation_ok:
+            type: boolean
+            children: 
+        desc: 只核对当前考试数据的校验值；清洗算法不使用校验值生成结果。更换数据时仍输出实际统计。
+        selected: false
+      type: custom
+      width: 250
+      height: 80
+      sourcePosition: right
+      targetPosition: left
+      position:
+        x: 2970
+        y: 300
+      positionAbsolute:
+        x: 2970
+        y: 300
+      selected: false
+    - id: '1794740982816'
+      data:
+        type: end
+        title: 输出统计及五个 MD 文件
+        outputs:
+        - variable: check_summary
+          value_selector:
+          - '1794750000004'
+          - check_summary
+          value_type: string
+        - variable: validation_ok
+          value_selector:
+          - '1794750000004'
+          - validation_ok
+          value_type: boolean
+        - variable: parse_ok
+          value_selector:
+          - '1794722510259'
+          - parse_ok
+          value_type: boolean
+        - variable: parse_message
+          value_selector:
+          - '1794722510259'
+          - parse_message
+          value_type: string
+        - variable: complaint_record_md_file
+          value_selector:
+          - '1794725969863'
+          - files
+          value_type: array[file]
+        - variable: complaint_handling_md_file
+          value_selector:
+          - '1794725977431'
+          - files
+          value_type: array[file]
+        - variable: customer_info_md_file
+          value_selector:
+          - '1794725982707'
+          - files
+          value_type: array[file]
+        - variable: employee_info_md_file
+          value_selector:
+          - '1794725986671'
+          - files
+          value_type: array[file]
+        - variable: hall_info_md_file
+          value_selector:
+          - '1794726005592'
+          - files
+          value_type: array[file]
+        - variable: record_time_fix_count
+          value_selector:
+          - '1794725948489'
+          - record_fix_count
+          value_type: number
+        - variable: record_id_fix_count
+          value_selector:
+          - '1794725952559'
+          - record_fix_count
+          value_type: number
+        - variable: handling_time_fix_count
+          value_selector:
+          - '1794725948489'
+          - handling_fix_count
+          value_type: number
+        - variable: handling_id_fix_count
+          value_selector:
+          - '1794725952559'
+          - handling_fix_count
+          value_type: number
+        - variable: record_fill_count
+          value_selector:
+          - '1794725957535'
+          - record_fill_count
+          value_type: number
+        - variable: handling_fill_count
+          value_selector:
+          - '1794725957535'
+          - handling_fill_count
+          value_type: number
+        - variable: deleted_count
+          value_selector:
+          - '1794725957535'
+          - deleted_count
+          value_type: number
+        - variable: final_count
+          value_selector:
+          - '1794725957535'
+          - final_count
+          value_type: number
+        - variable: cross_id_fill_count
+          value_selector:
+          - '1794750000004'
+          - cross_id_fill_count
+          value_type: number
+        - variable: inferred_id_fill_count
+          value_selector:
+          - '1794750000004'
+          - inferred_id_fill_count
+          value_type: number
+        - variable: time_issues_json
+          value_selector:
+          - '1794725948489'
+          - time_issues_json
+          value_type: string
+        - variable: id_report_json
+          value_selector:
+          - '1794725952559'
+          - id_report_json
+          value_type: string
+        - variable: clean_report_json
+          value_selector:
+          - '1794725957535'
+          - clean_report_json
+          value_type: string
+        - variable: validation_json
+          value_selector:
+          - '1794750000004'
+          - validation_json
+          value_type: string
+        selected: false
+      type: custom
+      width: 250
+      height: 80
+      sourcePosition: right
+      targetPosition: left
+      position:
+        x: 3300
+        y: 300
+      positionAbsolute:
+        x: 3300
+        y: 300
+      selected: false
+    viewport:
+      x: 40
+      y: 60
+      zoom: 0.55
+  rag_pipeline_variables: []
